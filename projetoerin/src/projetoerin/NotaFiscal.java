@@ -5,6 +5,8 @@
  */
 package projetoerin;
 
+import java.util.List;
+
 /**
  *
  * @author Laboratorio
@@ -13,6 +15,7 @@ public class NotaFiscal {
     private Integer numero;
     private Integer data;
     private String CNPJ;
+    private List<Item> Item;
 
     /**
      * @return the numero
@@ -56,5 +59,27 @@ public class NotaFiscal {
         this.CNPJ = CNPJ;
     }
     
+    /**
+     * @return the Item
+     */
+    public List<Item> getItem() {
+        return Item;
+    }
+
+    /**
+     * @param Item the Item to set
+     */
+    public void setItem(List<Item> Item) {
+        this.Item = Item;
+    }
+    
+     
+    public Double getValorNota(){
+        return 10.0;
+    }
+    
+    public Double getFaturamento(){
+        return 100.0;
+    }
 
 }
