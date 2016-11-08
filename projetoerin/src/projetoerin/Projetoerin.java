@@ -18,4 +18,8 @@ public class Projetoerin {
         // TODO code application logic here
     }
     
+    public void testa(){
+        System.out.println("Testa");
+}
+    
 }
